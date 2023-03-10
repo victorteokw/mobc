@@ -1,4 +1,4 @@
-# Prisma Mobc
+# Mobc Forked
 
 This is a fork of the original Mobc with fixes for stablility. This changes the design of Mobc to use
 a Semaphore to manage the pool rather than the original design that used channels.

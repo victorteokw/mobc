@@ -1,5 +1,5 @@
 [package]
-name = "mobc"
+name = "mobc-forked"
 version = "0.7.3"
 authors = ["importcjj <importcjj@gmail.com>"]
 edition = "2018"
