@@ -1,6 +1,7 @@
 use std::future::Future;
 use tracing::instrument::WithSubscriber;
 use tracing::Dispatch;
+use std::thread;
 
 /// Spawns a new asynchronous task.
 pub fn spawn<T>(task: T)
@@ -33,7 +34,7 @@ where
     T::Output: Send + 'static,
 {
     let dispatcher = get_current_dispatcher();
-    println!("will spawn from mobc");
+    println!("will spawn from mobc: {:?}", thread::current().name());
     tokio::spawn(task.with_subscriber(dispatcher));
 }
 
