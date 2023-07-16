@@ -33,8 +33,7 @@ where
     T::Output: Send + 'static,
 {
     let dispatcher = get_current_dispatcher();
-    let handle = tokio::runtime::Handle::current();
-    handle.enter();
+    println!("will spawn from mobc");
     tokio::spawn(task.with_subscriber(dispatcher));
 }
 

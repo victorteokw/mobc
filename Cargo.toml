@@ -1,6 +1,6 @@
 [package]
 name = "mobc-forked"
-version = "0.7.4-alpha.1"
+version = "0.7.4-alpha.2"
 authors = ["importcjj <importcjj@gmail.com>"]
 edition = "2018"
 readme = "README.md"
