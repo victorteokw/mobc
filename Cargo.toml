@@ -1,6 +1,6 @@
 [package]
 name = "mobc-forked"
-version = "0.7.3"
+version = "0.7.4-alpha.1"
 authors = ["importcjj <importcjj@gmail.com>"]
 edition = "2018"
 readme = "README.md"
@@ -20,7 +20,7 @@ unstable = []
 futures-core = "0.3"
 futures-channel = { version = "0.3", features=["sink"] }
 futures-util = { version = "0.3", features=["sink"] }
-tokio = { version = "1", features=["rt", "rt-multi-thread", "time"], optional = true }
+tokio = { version = "1.0", features=["rt", "rt-multi-thread", "time"], optional = true }
 async-std = { version = "1.0", features=["unstable"], optional = true }
 actix-rt = { version = "1", optional = true }
 async-trait = "0.1"
@@ -32,7 +32,7 @@ tracing = { version = "0.1", features = ["attributes"] }
 tracing-subscriber = "0.3.11"
 
 [dev-dependencies]
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1.0", features = ["full"] }
 env_logger = "0.8"
 tide = "0.16"
 async-std = { version = "1.0", features = ["attributes"] }
